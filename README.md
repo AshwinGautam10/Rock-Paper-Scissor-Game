@@ -9,7 +9,12 @@
 - 🧠 Computer generates a random choice each round  
 - 🧾 **Scoreboard** updates automatically  
 - 🎨 Interactive design with hover effects and animations  
-- 💬 Dynamic message display showing results after each round  
+- 💬 Dynamic message display showing results after each round
+
+## 🌐 Live Demo
+
+🚀 **Play Now:** [Rock Paper Scissors Game](http://mywebapp-bucket-abcdef-2025.s3-website.eu-north-1.amazonaws.com)
+
 
 ---
 
@@ -23,10 +28,10 @@
 
 ## 🚀 How to Play
 
-1. Open the game in your browser (`index.html`)
-2. Click on **Rock**, **Paper**, or **Scissors**
-3. The computer will automatically make its choice
-4. The winner will be displayed instantly
+1. Open the game in your browser (`index.html`) or use the [Live Demo Link](http://mywebapp-bucket-abcdef-2025.s3-website.eu-north-1.amazonaws.com)  
+2. Click on **Rock**, **Paper**, or **Scissors**  
+3. The computer will automatically make its choice  
+4. The winner will be displayed instantly  
 5. Keep playing and track your score!
 
 ---
