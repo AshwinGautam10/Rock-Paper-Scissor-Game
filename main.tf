@@ -86,16 +86,17 @@ resource "aws_s3_object" "app_js" {
 
 
 resource "aws_s3_object" "images" {
-  for_each = fileset("${path.module}/images", "*") # reads all files in images/
+  for_each = fileset("${path.module}/images", "*") 
 
   bucket       = aws_s3_bucket.mywebapp-bucket.bucket
-  key          = "images/${each.value}"                         # S3 object key (keeps folder structure)
-  source       = "${path.module}/images/${each.value}"          # local file path
-  etag         = filemd5("${path.module}/images/${each.value}") # detects changes
+  key          = "images/${each.value}"                        
+  source       = "${path.module}/images/${each.value}"          
+  etag         = filemd5("${path.module}/images/${each.value}")
   content_type = "image/png"
 }
 
 
 output "name" {
   value = aws_s3_bucket_website_configuration.mywebapp.website_endpoint
+
 }
